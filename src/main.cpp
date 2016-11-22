@@ -2,36 +2,72 @@
 // Created by jclangst on 9/3/2016.
 //
 #include "rocksdb/db.h"
-#include "tbb/concurrent_hash_map.h"
 #include <iostream>
 #include <ctime>
 #include "GameNode.h"
 #include "MoveTree.h"
 #include "MiniMax.h"
-#include "libcuckoo/cuckoohash_map.hh"
-#include "libcuckoo/city_hasher.hh"
+#include "mpi/mpi.h"
+#include "UI.h"
+
+#define N 5
+
+int main(int argc, char *argv[]) {
+
+    int id;
+    int ierr;
+    int p;
+
+    //initialize MPI
+    ierr = MPI_Init(&argc, &argv);
+
+    //get the number of processes
+    ierr = MPI_Comm_size(MPI_COMM_WORLD, &p);
+
+    //get the specific process ID
+    ierr = MPI_Comm_rank(MPI_COMM_WORLD, &id);
+
+    //UI ui;
+    unsigned char n;
+   // n = ui.getN();
 
 
-int main() {
-    MoveTree moves = MoveTree(5);
-    MiniMax search = MiniMax(&moves);
-    GameNode node = GameNode(5);
+    std::shared_ptr<MoveTree> moves(new MoveTree(N));
+    MiniMax search = MiniMax(moves);
 
 
     std::clock_t begin = clock();
-    search.initiate(node);
-
-    std::clock_t end = clock();
-
-    std::cout << (end - begin)/CLOCKS_PER_SEC << std::endl;
-
-    moves.close();
 
 
+
+
+    std::cout << "Iniating Process " << id << std::endl;
+
+    std::cout << id << ": SEARCH - " << &search << std::endl;
+    GameNode node = GameNode(N);
+    moves->get(node);
+
+
+    std::cout << id << " NODE - " << &node << std::endl;
+    search.initiate(node, id);
+
+    std::cout << id << " DONE" << std::endl;
+    //terminate process
+    MPI_Finalize();
+
+
+
+    //ui.explore(std::shared_ptr<GameNode>(new GameNode(N)), *moves);
+
+
+    if(id == 0){
+        std::clock_t end = clock();
+        std::cout << (end - begin)/CLOCKS_PER_SEC << std::endl;
+        moves->close();
+    }
+
+    return 0;
 }
-
-
-
 
 
 
