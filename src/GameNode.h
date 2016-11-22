@@ -3,7 +3,8 @@
 //
 
 #include <unordered_set>
-#include <bitset>
+#include <memory>
+#include <vector>
 
 #ifndef CPPNTT_GAMENODE_H
 #define CPPNTT_GAMENODE_H
@@ -12,24 +13,27 @@
 class GameNode {
 
     public:
-        static unsigned char n;
-        std::unordered_set<int> possibleMoves;
-        unsigned char lastMove;
-        unsigned long long board;
+    static unsigned char n;
+    std::unordered_set<unsigned char> possibleMoves;
+    unsigned long long board;
+    unsigned long long hash;
+    char sym_type;
 
-        //constructors
-        GameNode(unsigned char n);
-        GameNode(const GameNode&);
+    //constructors
+    GameNode(unsigned char n);
+    GameNode(const GameNode &node);
 
-        unsigned char rMove(unsigned char move);
-        unsigned char r2Move(unsigned char move);
-        unsigned char r3Move(unsigned char move);
-        unsigned char fMove(unsigned char move);
-        unsigned char rfMove(unsigned char move);
-        unsigned char r2fMove(unsigned char move);
-        unsigned char r3fMove(unsigned char move);
 
-        unsigned long long rBoard(unsigned long long board);
+    void updateHash();
+    unsigned char rMove(unsigned char move);
+    unsigned char r2Move(unsigned char move);
+    unsigned char r3Move(unsigned char move);
+    unsigned char fMove(unsigned char move);
+    unsigned char rfMove(unsigned char move);
+    unsigned char r2fMove(unsigned char move);
+    unsigned char r3fMove(unsigned char move);
+
+    unsigned long long rBoard(unsigned long long board);
     unsigned long long r2Board(unsigned long long board);
     unsigned long long r3Board(unsigned long long board);
     unsigned long long fBoard(unsigned long long board);
@@ -37,11 +41,16 @@ class GameNode {
     unsigned long long r2fBoard(unsigned long long board);
     unsigned long long r3fBoard(unsigned long long board);
 
-        std::array< unsigned char, 2> getRC(unsigned char move);
-       unsigned char getMove(std::array<unsigned char, 2>);
+    std::array< unsigned char, 2> getRC(unsigned char move);
+    unsigned char getMove(std::array<unsigned char, 2>);
+
+
+    void printInfo();
+
+    std::vector<std::shared_ptr<GameNode> > succ() const;
 
     void makeMove(unsigned char move);
-    void propagate();
+    void prune(unsigned char lastMove);
     unsigned char columnLosingMove(unsigned char start);
     unsigned char rowLosingMove(unsigned char start);
     unsigned char rightDiagLosingMove(unsigned char mover, unsigned char movec);
