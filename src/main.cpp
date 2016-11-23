@@ -6,7 +6,7 @@
 #include "GameNode.h"
 #include "MoveTree.h"
 #include "MiniMax.h"
-#include "mpi/mpi.h"
+#include "mpi.h"
 #include "UI.h"
 #include <cstring>
 #include <chrono>
