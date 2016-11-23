@@ -16,22 +16,15 @@ class MoveTree {
     public:
     Db* resolved;
     DbEnv* resEnv;
-    Db* locks;
-    DbEnv* lockEnv;
     char* dir;
 
     MoveTree(char n, char* dir);
 
 
-    void lock(GameNode &board);
-    void unlock(GameNode &board);
-    bool isLocked(GameNode &board);
+    void put(std::shared_ptr<GameNode> board, char i);
+    char get(std::shared_ptr<GameNode> board);
 
-    void put(GameNode &node, char i);
-    char get(GameNode &board);
-
-    std::shared_ptr<GameNode> getStart(GameNode &node);
-
+    static void removeDb(char n, char* dir);
     void open(char n);
     void close();
 };

@@ -14,19 +14,21 @@ MiniMax::MiniMax(std::shared_ptr<MoveTree> tree){
 }
 
 
-void MiniMax::initiate(GameNode &objective, int process, int threads){
+void MiniMax::initiate(GameNode &node, int process, int threads){
     std::cout << process << ": Entering" << std::endl;
+    std::shared_ptr<GameNode> objective(new GameNode(node));
 
     omp_set_num_threads(threads);
     #pragma omp parallel
     {
+        std::cout << process << ": Checking Tree" << std::endl;
        #pragma omp for schedule(dynamic)
        for(int i = 0; i < 50000; i++) {
-            std::cout << process << ": Checking Tree" << std::endl;
+
             if(MiniMax::tree->get(objective) == -1) {
 
                 std::cout << process << ": Starting" << std::endl;
-                runThread(std::shared_ptr<GameNode>(new GameNode(objective)));
+                runThread(objective);
                 std::cout << process << ": Finishing" << std::endl;
 
             }else{
@@ -45,7 +47,7 @@ void MiniMax::initiate(GameNode &objective, int process, int threads){
 bool MiniMax::runThread(std::shared_ptr<GameNode> node){
 
     //node->printInfo();
-    char dp = MiniMax::tree->get(*node);
+    char dp = MiniMax::tree->get(node);
     if(dp != -1){
         //std::cout << "RETURN DP " << (dp == 1) << " FOR " << std::endl;
         //node->printInfo();
@@ -67,9 +69,9 @@ bool MiniMax::runThread(std::shared_ptr<GameNode> node){
     //std::cout << "RETURN " << (status == 1) << " FOR: " << std::endl;
     if(status == 1){
 
-        MiniMax::tree->put(*node, 1);
+        MiniMax::tree->put(node, 1);
     }else{
-        MiniMax::tree->put(*node, 0);
+        MiniMax::tree->put(node, 0);
     }
 
     //node->printInfo();

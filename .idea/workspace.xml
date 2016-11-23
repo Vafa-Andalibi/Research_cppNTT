@@ -15,16 +15,1056 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a2d752b-a95e-4b42-ac1d-fb88ba386f19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UI.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/UI.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cppNTT.iml" afterPath="$PROJECT_DIR$/.idea/cppNTT.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMakeListsBR2.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/.arcconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/.clang-format" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/DEFAULT_OPTIONS_HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/DUMP_FORMAT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/HISTORY.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/INSTALL.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/LANGUAGE-BINDINGS.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/PATENTS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/ROCKSDB_LITE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/USERS.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/Vagrantfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/WINDOWS_PORT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/appveyor.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/__phutil_library_init__.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/__phutil_library_map__.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/config/FacebookArcanistConfiguration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/config/FacebookOldArcanistConfiguration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/config/RocksDBCommonHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/ArcanistCpplintLinter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/BaseDirectoryScopedFormatLinter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/FacebookHowtoevenLinter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/FbcodeClangFormatLinter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/FbcodeCppLinter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/cpp_linter/cpplint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/lint_engine/FacebookFbcodeLintEngine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/lint_engine/FacebookHowtoevenLintEngine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/unit_engine/FacebookFbcodeUnitTestEngine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/arcanist_util/unit_engine/FacebookOldFbcodeUnitTestEngine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/amalgamate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/build_detect_platform" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/cont_integration.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/dependencies.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/dependencies_4.8.1.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/dockerbuild.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/error_filter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/fb_compile_mongo.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/fbcode_config.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/fbcode_config4.8.1.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/format-diff.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/gnu_parallel" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/make_new_version.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/make_package.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/precommit_checker.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/regression_build_test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/rocksdb-lego-determinator" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/run_ci_db_test.ps1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/update_dependencies.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/build_tools/version.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/coverage/coverage_test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/coverage/parse_gcov_output.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/auto_roll_logger.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/auto_roll_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/auto_roll_logger_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/c.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/c_test.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/column_family.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/column_family.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/column_family_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compact_files_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compacted_db_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compacted_db_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_iterator_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_job.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_job.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_job_stats_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_job_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_picker.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_picker.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/compaction_picker_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/comparator_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/convenience.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/corruption_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/cuckoo_table_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_block_cache_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_bloom_filter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_compaction_filter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_compaction_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_dynamic_level_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_filesnapshot.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_flush_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl_add_file.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl_debug.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl_experimental.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl_readonly.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_impl_readonly.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_info_dumper.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_info_dumper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_inplace_update_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_io_failure_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_iter.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_iter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_iter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_iterator_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_log_iter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_options_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_properties_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_sst_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_table_properties_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_tailing_iter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_test2.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_test_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_test_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_universal_compaction_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/db_wal_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/dbformat.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/dbformat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/dbformat_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/deletefile_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/event_helpers.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/event_helpers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/experimental.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/fault_injection_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/file_indexer.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/file_indexer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/file_indexer_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/filename.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/filename.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/filename_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/flush_job.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/flush_job.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/flush_job_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/flush_scheduler.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/flush_scheduler.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/forward_iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/forward_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/forward_iterator_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/inlineskiplist.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/inlineskiplist_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/internal_stats.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/internal_stats.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/job_context.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/listener_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_format.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_reader.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_writer.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/log_writer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/managed_iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/managed_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/manual_compaction_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable_allocator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable_allocator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable_list.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable_list.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtable_list_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/memtablerep_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_context.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_helper.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_helper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_helper_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_operator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/merge_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/options_file_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/perf_context_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/pinned_iterators_manager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/plain_table_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/prefix_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/repair.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/repair_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/skiplist.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/skiplist_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/snapshot_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/snapshot_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/table_cache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/table_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/table_properties_collector.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/table_properties_collector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/table_properties_collector_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/transaction_log_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/transaction_log_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_builder_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_edit.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_edit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_edit_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_set.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_set.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/version_set_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/wal_manager.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/wal_manager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/wal_manager_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_batch.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_batch_base.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_batch_internal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_batch_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_callback.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_callback_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_controller.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_controller.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_controller_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_thread.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/write_thread.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/xfunc_test_points.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/db/xfunc_test_points.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_config_local_dev.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/authors.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/features.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/nav.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/nav_docs.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/powered_by.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/powered_by_highlight.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_data/promo.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_docs/faq.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_docs/getting-started.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/blog_pagination.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/content/gridblocks.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/content/items/gridblock.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/doc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/doc_paging.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/head.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/hero.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/home_header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/katex_import.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/katex_render.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav/collection_nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav/collection_nav_group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav/collection_nav_group_item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav/header_nav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/nav_search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/all_share.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/ascii_cinema.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/github_star.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/github_watch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/google_share.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/iframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/like_button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/plugin_row.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/post_social_plugins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/slideshow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/twitter_follow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/plugins/twitter_share.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/powered_by.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/social_plugins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_includes/ui/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/blog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/blog_default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/doc_default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/doc_page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/plain.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/redirect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_layouts/support.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-03-27-how-to-backup-rocksdb.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-03-27-how-to-persist-in-memory-rocksdb-database.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-04-02-the-1st-rocksdb-local-meetup-held-on-march-27-2014.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-04-07-rocksdb-2-8-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-04-21-indexing-sst-files-for-better-lookup-performance.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-05-14-lock.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-05-19-rocksdb-3-0-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-05-22-rocksdb-3-1-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-06-23-plaintable-a-new-file-format.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-06-27-avoid-expensive-locks-in-get.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-06-27-rocksdb-3-2-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-07-29-rocksdb-3-3-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-09-12-cuckoo.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-09-12-new-bloom-filter-format.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2014-09-15-rocksdb-3-5-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-01-16-migrating-from-leveldb-to-rocksdb-2.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-02-24-reading-rocksdb-options-from-a-file.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-02-27-write-batch-with-index.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-04-22-integrating-rocksdb-with-mongodb-2.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-06-12-rocksdb-in-osquery.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-07-15-rocksdb-2015-h2-roadmap.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-07-17-spatial-indexing-in-rocksdb.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-07-22-rocksdb-is-now-available-in-windows-platform.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-07-23-dynamic-level.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-10-27-getthreadlist.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-11-10-use-checkpoints-for-efficient-snapshots.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2015-11-16-analysis-file-read-latency-by-level.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-01-29-compaction_pri.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-02-24-rocksdb-4-2-release.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-02-25-rocksdb-ama.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-03-07-rocksdb-options-file.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-04-26-rocksdb-4-5-1-released.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_posts/2016-07-26-rocksdb-4-8-released.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_blog.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_gridBlock.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_poweredby.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_promo.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_react_docs_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_react_header_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_search.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_slideshow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_syntax-highlighting.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/_sass/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/blog/all.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/css/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/feed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Black.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-BlackItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-BlackItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Italic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Italic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/fonts/LatoLatin-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/Resize-of-20140327_200754-300x225.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/promo-adapt.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/promo-flash.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/promo-operations.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/promo-performance.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/images/tree_example1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/static/og_image.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/docs/support.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/c_simple_example.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/column_families_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/compact_files_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/compaction_filter_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/optimistic_transaction_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/options_file_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/rocksdb_option_file_example.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/simple_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/examples/transaction_example.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/hdfs/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/hdfs/env_hdfs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/hdfs/setup.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/c.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/compaction_filter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/compaction_job_stats.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/comparator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/convenience.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/db_bench_tool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/db_dump_tool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/env.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/experimental.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/filter_policy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/flush_block_policy.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/iostats_context.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/ldb_tool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/listener.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/memtablerep.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/merge_operator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/metadata.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/options.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/perf_context.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/perf_level.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/persistent_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/rate_limiter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/slice.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/slice_transform.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/snapshot.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/sst_dump_tool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/sst_file_manager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/sst_file_writer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/statistics.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/status.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/table.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/table_properties.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/thread_status.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/threadpool.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/transaction_log.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/types.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/universal_compaction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/backupable_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/checkpoint.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/convenience.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/date_tiered_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/db_ttl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/document_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/env_librados.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/env_mirror.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/env_registry.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/flashcache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/geo_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/info_log_finder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/json_document.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/ldb_cmd.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/ldb_cmd_execute_result.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/leveldb_options.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/memory_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/optimistic_transaction_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/option_change_migration.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/options_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/sim_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/spatial_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/stackable_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/table_properties_collectors.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/transaction.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/transaction_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/transaction_db_mutex.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/utility_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/utilities/write_batch_with_index.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/version.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/wal_filter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/write_batch.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/write_batch_base.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/include/rocksdb/write_buffer_manager.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/HISTORY-JAVA.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/RELEASE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/benchmark/src/main/java/org/rocksdb/benchmark/DbBenchmark.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/crossbuild/Vagrantfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/crossbuild/build-linux-centos.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/crossbuild/build-linux.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/jdb_bench.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni.pom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/backupablejni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/backupenginejni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/checkpoint.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/columnfamilyhandle.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/compaction_filter.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/comparator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/comparatorjnicallback.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/comparatorjnicallback.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/env.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/filter.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/loggerjnicallback.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/loggerjnicallback.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/memtablejni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/merge_operator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/options.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/portal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/ratelimiterjni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/remove_emptyvalue_compactionfilterjni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/restorejni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/rocksdb_exception_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/rocksjni.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/slice.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/snapshot.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/statistics.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/table.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/transaction_log.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/ttl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/write_batch.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/write_batch_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/write_batch_with_index.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/writebatchhandlerjnicallback.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/rocksjni/writebatchhandlerjnicallback.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/samples/src/main/java/RocksDBColumnFamilySample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/samples/src/main/java/RocksDBSample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractCompactionFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractImmutableNativeReference.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractNativeReference.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractRocksIterator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractSlice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/AbstractWriteBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BackupEngine.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BackupInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BackupableDB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BackupableDBOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BlockBasedTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BloomFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/BuiltinComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Checkpoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ChecksumType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ColumnFamilyDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ColumnFamilyHandle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ColumnFamilyOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ColumnFamilyOptionsInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/CompactionStyle.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Comparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ComparatorOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/CompressionType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/DBOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/DBOptionsInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/DirectComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/DirectSlice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/EncodingType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Env.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Experimental.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Filter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/FlushOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/GenericRateLimiterConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/HashLinkedListMemTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/HashSkipListMemTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/HistogramData.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/HistogramType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/IndexType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/InfoLogLevel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Logger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/MemTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/MergeOperator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/MutableColumnFamilyOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/MutableColumnFamilyOptionsInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/NativeLibraryLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Options.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/PlainTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RateLimiterConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ReadOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/ReadTier.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RemoveEmptyValueCompactionFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RestoreBackupableDB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RestoreOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksDB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksDBException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksEnv.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksIterator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksIteratorInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksMemEnv.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksMutableObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/RocksObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/SkipListMemTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Slice.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Snapshot.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Statistics.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/StatisticsCollector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/StatisticsCollectorCallback.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/StatsCollectorInput.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/Status.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/StringAppendOperator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/TableFormatConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/TickerType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/TransactionLogIterator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/TtlDB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/VectorMemTableConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/WBWIRocksIterator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/WriteBatch.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/WriteBatchInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/WriteBatchWithIndex.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/WriteOptions.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/util/BytewiseComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/util/DirectBytewiseComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/util/Environment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/util/ReverseBytewiseComparator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/main/java/org/rocksdb/util/SizeUnit.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/AbstractComparatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/BackupEngineTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/BackupableDBOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/BlockBasedTableConfigTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/CheckPointTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ColumnFamilyOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ColumnFamilyTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ComparatorOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ComparatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/CompressionOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/DBOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/DirectComparatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/DirectSliceTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/FilterTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/FlushTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/InfoLogLevelTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/KeyMayExistTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/LoggerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/MemTableTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/MergeTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/MixedOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/MutableColumnFamilyOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/NativeLibraryLoaderTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/OptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/PlainTableConfigTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/PlatformRandomHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ReadOnlyTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/ReadOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksDBExceptionTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksDBTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksEnvTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksIteratorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksMemEnvTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/RocksMemoryResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/SliceTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/SnapshotTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/StatisticsCollectorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/StatsCallbackMock.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/TransactionLogIteratorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/TtlDBTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/Types.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/WriteBatchHandlerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/WriteBatchTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/WriteBatchThreadedTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/WriteBatchWithIndexTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/WriteOptionsTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/test/RocksJunitRunner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/util/BytewiseComparatorTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/util/EnvironmentTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/java/src/test/java/org/rocksdb/util/SizeUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_cuckoo_rep.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_cuckoo_rep.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_linklist_rep.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_linklist_rep.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_skiplist_rep.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/hash_skiplist_rep.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/skiplistrep.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/stl_wrappers.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/memtable/vectorrep.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/dirent.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/likely.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/port.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/port_example.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/port_posix.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/port_posix.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/stack_trace.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/stack_trace.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/sys_time.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/util_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/env_default.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/env_win.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/env_win.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/io_win.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/io_win.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/port_win.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/port_win.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/win_logger.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/win_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/xpress_win.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/win/xpress_win.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/port/xpress.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/src.mk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/adaptive_table_factory.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/adaptive_table_factory.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_filter_block.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_filter_block.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_filter_block_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_factory.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_factory.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_reader.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_based_table_reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_prefix_index.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_prefix_index.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/block_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/bloom_block.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/bloom_block.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_builder_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_factory.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_factory.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_reader.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/cuckoo_table_reader_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/filter_block.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/flush_block_policy.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/format.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/format.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/full_filter_block.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/full_filter_block.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/full_filter_block_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/get_context.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/get_context.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/internal_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/iter_heap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/iterator_wrapper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/merger.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/merger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/merger_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/meta_blocks.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/meta_blocks.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/mock_table.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/mock_table.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/persistent_cache_helper.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/persistent_cache_helper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_factory.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_factory.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_index.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_index.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_key_coding.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_key_coding.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_reader.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/plain_table_reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/scoped_arena_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/sst_file_writer.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_builder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_properties.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_properties_internal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_reader.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_reader_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/table_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/two_level_iterator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/table/two_level_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/COMMIT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/FbsonDocument.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/FbsonJsonParser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/FbsonStream.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/FbsonUtil.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/fbson/FbsonWriter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/flashcache/flashcache_ioctl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/gtest-1.7.0/fused-src/gtest/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/gtest-1.7.0/fused-src/gtest/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/gtest-1.7.0/fused-src/gtest/gtest-all.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/third-party/gtest-1.7.0/fused-src/gtest/gtest.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/thirdparty.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/auto_sanity_test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/benchmark.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/benchmark_leveldb.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/check_format_compatible.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_bench_tool.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_bench_tool_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_crashtest.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_repl_stress.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_sanity_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/db_stress.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/dbench_monitor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/dump/db_dump_tool.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/dump/rocksdb_dump.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/dump/rocksdb_undump.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/generate_random_db.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb_cmd.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb_cmd_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb_cmd_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/ldb_tool.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/pflag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/API.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/binding.gyp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/db_wrapper.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/db_wrapper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/rdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/rdb.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rdb/unit_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/reduce_levels_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/regression_test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/rocksdb_dump_test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/run_flash_bench.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/run_leveldb.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/sample-dump.dmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/sst_dump.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/sst_dump_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/sst_dump_tool.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/sst_dump_tool_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/verify_random_db.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/write_stress.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/tools/write_stress_runner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/aligned_buffer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/allocator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/arena.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/arena.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/arena_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/autovector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/autovector_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/bloom.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/bloom_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/build_version.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/cache_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/cache_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/cf_options.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/cf_options.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/channel.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/clock_cache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/clock_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/coding.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/coding.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/coding_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/compaction_job_stats_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/comparator.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/compression.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/concurrent_arena.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/concurrent_arena.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/crc32c.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/crc32c.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/crc32c_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/delete_scheduler.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/delete_scheduler.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/delete_scheduler_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/dynamic_bloom.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/dynamic_bloom.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/dynamic_bloom_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_basic_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_chroot.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_chroot.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_hdfs.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_posix.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/env_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/event_logger.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/event_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/event_logger_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/fault_injection_test_env.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/fault_injection_test_env.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/file_reader_writer.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/file_reader_writer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/file_reader_writer_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/file_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/file_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/filelock_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/filter_policy.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/hash.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/hash.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/heap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/heap_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/histogram.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/histogram.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/histogram_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/histogram_windowing.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/histogram_windowing.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/instrumented_mutex.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/instrumented_mutex.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/io_posix.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/io_posix.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/iostats_context.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/iostats_context_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/iostats_context_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/kv_map.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/log_buffer.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/log_buffer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/log_write_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/logging.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/logging.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/lru_cache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/lru_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/lru_cache_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/memenv.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/mock_env.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/mock_env.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/mock_env_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/murmurhash.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/murmurhash.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/mutexlock.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_helper.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_helper.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_parser.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_parser.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_sanity_check.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_sanity_check.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_settable_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/options_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/perf_context.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/perf_context_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/perf_level.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/perf_level_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/perf_step_timer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/posix_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/random.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/random.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/rate_limiter.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/rate_limiter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/rate_limiter_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sharded_cache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sharded_cache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/slice.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/slice_transform_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sst_file_manager_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sst_file_manager_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/statistics.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/statistics.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/statistics_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/status.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/status_message.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/stderr_logger.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/stop_watch.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/string_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/string_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sync_point.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/sync_point.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/testharness.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/testharness.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/testutil.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/testutil.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_list_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_local.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_local.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_local_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_operation.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_updater.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_updater.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_updater_debug.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/thread_status_util_debug.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/threadpool_imp.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/threadpool_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/transaction_test_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/transaction_test_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/xfunc.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/xfunc.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/xxhash.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/util/xxhash.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/backupable/backupable_db.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/backupable/backupable_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/blob_db/blob_db.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/blob_db/blob_db.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/blob_db/blob_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/checkpoint/checkpoint.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/checkpoint/checkpoint_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/col_buf_decoder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/col_buf_decoder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/col_buf_encoder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/col_buf_encoder.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/column_aware_encoding_exp.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/column_aware_encoding_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/column_aware_encoding_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/column_aware_encoding_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/compaction_filters/remove_emptyvalue_compactionfilter.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/compaction_filters/remove_emptyvalue_compactionfilter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/convenience/info_log_finder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/date_tiered/date_tiered_db_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/date_tiered/date_tiered_db_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/date_tiered/date_tiered_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/document/document_db.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/document/document_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/document/json_document.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/document/json_document_builder.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/document/json_document_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_librados.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_librados.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_librados_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_mirror.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_mirror_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_registry.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/env_registry_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/flashcache/flashcache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/flashcache/flashcache.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/geodb/geodb_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/geodb/geodb_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/geodb/geodb_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/leveldb_options/leveldb_options.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/memory/memory_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/memory/memory_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/max.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/put.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/string_append/stringappend.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/string_append/stringappend.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/string_append/stringappend2.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/string_append/stringappend2.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/string_append/stringappend_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/merge_operators/uint64add.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/option_change_migration/option_change_migration.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/option_change_migration/option_change_migration_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/options/options_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/options/options_util_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier_file.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier_file.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier_file_buffer.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier_metadata.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/block_cache_tier_metadata.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/hash_table.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/hash_table_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/hash_table_evictable.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/hash_table_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/lrulist.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_bench.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_test.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_tier.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_tier.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/persistent_cache_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/volatile_tier_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/persistent_cache/volatile_tier_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/redis_list_exception.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/redis_list_iterator.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/redis_lists.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/redis_lists.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/redis/redis_lists_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/simulator_cache/sim_cache.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/simulator_cache/sim_cache_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/spatialdb/spatial_db.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/spatialdb/spatial_db_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/spatialdb/utils.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/table_properties_collectors/compact_on_deletion_collector.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/table_properties_collectors/compact_on_deletion_collector.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/table_properties_collectors/compact_on_deletion_collector_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/optimistic_transaction_db_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/optimistic_transaction_db_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/optimistic_transaction_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/optimistic_transaction_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/optimistic_transaction_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_base.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_base.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_db_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_db_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_db_mutex_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_db_mutex_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_lock_mgr.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_lock_mgr.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_util.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/transactions/transaction_util.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/ttl/db_ttl_impl.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/ttl/db_ttl_impl.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/ttl/ttl_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/util_merge_operators_test.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/write_batch_with_index/write_batch_with_index.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/write_batch_with_index/write_batch_with_index_internal.cc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/write_batch_with_index/write_batch_with_index_internal.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/rocksdb/utilities/write_batch_with_index/write_batch_with_index_test.cc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameNode.cpp" afterPath="$PROJECT_DIR$/src/GameNode.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MiniMax.cpp" afterPath="$PROJECT_DIR$/src/MiniMax.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MiniMax.h" afterPath="$PROJECT_DIR$/src/MiniMax.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MoveTree.cpp" afterPath="$PROJECT_DIR$/src/MoveTree.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MoveTree.h" afterPath="$PROJECT_DIR$/src/MoveTree.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UI.cpp" afterPath="$PROJECT_DIR$/src/UI.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
     </list>
     <ignored path="cppNTT.iws" />
@@ -48,6 +1088,16 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeListsBR2.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CMakeListsBR2.txt">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
@@ -58,12 +1108,10 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-630">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="454">
+              <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
               <folding>
                 <element signature="e#42#61#0" expanded="true" />
-                <element signature="e#5085#5317#0" expanded="false" />
-                <element signature="e#5319#5560#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,7 +1120,7 @@
       <file leaf-file-name="GameNode.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameNode.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2745">
+            <state relative-caret-position="1789">
               <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
               <folding>
                 <element signature="e#43#64#0" expanded="true" />
@@ -104,8 +1152,8 @@
       <file leaf-file-name="GameNode.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding>
                 <element signature="e#43#67#0" expanded="true" />
               </folding>
@@ -116,13 +1164,10 @@
       <file leaf-file-name="MoveTree.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MoveTree.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1586">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
               <folding>
                 <element signature="e#211#230#0" expanded="true" />
-                <element signature="e#2040#2325#0" expanded="false" />
-                <element signature="e#2896#3145#0" expanded="false" />
-                <element signature="e#3257#3527#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,22 +1176,26 @@
       <file leaf-file-name="MoveTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MoveTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            <state relative-caret-position="480">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
                 <element signature="e#97#132#0" expanded="true" />
+                <marker date="1479913710866" expanded="true" signature="230:523" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiniMax.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MiniMax.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MiniMax.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="574">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="e#43#63#0" expanded="true" />
+                <marker date="1479913710878" expanded="true" signature="169:236" ph="{...}" />
+                <marker date="1479913710878" expanded="true" signature="303:1098" ph="{...}" />
+                <marker date="1479913710878" expanded="true" signature="1158:1974" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -155,8 +1204,8 @@
       <file leaf-file-name="UI.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2284">
-              <caret line="155" column="42" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
+            <state relative-caret-position="379">
+              <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -174,16 +1223,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MiniMax.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MiniMax.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -192,16 +1231,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/GameNode.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/UI.h" />
         <option value="$PROJECT_DIR$/src/GameNode.cpp" />
-        <option value="$PROJECT_DIR$/src/UI.cpp" />
-        <option value="$PROJECT_DIR$/src/MoveTree.h" />
-        <option value="$PROJECT_DIR$/src/MoveTree.cpp" />
-        <option value="$PROJECT_DIR$/src/MiniMax.cpp" />
         <option value="$PROJECT_DIR$/src/MiniMax.h" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/GameNode.h" />
+        <option value="$PROJECT_DIR$/src/MoveTree.h" />
+        <option value="$PROJECT_DIR$/src/MiniMax.cpp" />
+        <option value="$PROJECT_DIR$/src/UI.cpp" />
+        <option value="$PROJECT_DIR$/src/MoveTree.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -451,10 +1490,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jclangst\Desktop\cppNTT\libs" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\jclangst\Desktop\cppNTT\libs" />
     </key>
   </component>
@@ -669,7 +1709,8 @@
       <workItem from="1479739516133" duration="20777000" />
       <workItem from="1479760539699" duration="16642000" />
       <workItem from="1479778437676" duration="27000" />
-      <workItem from="1479828466488" duration="37154000" />
+      <workItem from="1479828466488" duration="37548000" />
+      <workItem from="1479909355635" duration="8304000" />
     </task>
     <task id="LOCAL-00001" summary="First time that MPI works - still much clean-up and optimize">
       <created>1479850874542</created>
@@ -678,20 +1719,27 @@
       <option name="project" value="LOCAL" />
       <updated>1479850874542</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1) Added command line arguments 2) Got MPI and OpenMP to work in sync 3)Eliminated locking and replaced with random search for large optimization">
+      <created>1479875630377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1479875630377</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106944000" />
+    <option name="totallyTimeSpent" value="115642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="2495" height="1321" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2264529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2264529" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298722" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32667732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -721,7 +1769,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First time that MPI works - still much clean-up and optimize" />
-    <option name="LAST_COMMIT_MESSAGE" value="First time that MPI works - still much clean-up and optimize" />
+    <MESSAGE value="1) Added command line arguments 2) Got MPI and OpenMP to work in sync 3)Eliminated locking and replaced with random search for large optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="1) Added command line arguments 2) Got MPI and OpenMP to work in sync 3)Eliminated locking and replaced with random search for large optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,16 +1779,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MoveTree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
-          <folding>
-            <element signature="e#97#132#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -762,8 +1801,6 @@
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#5085#5317#0" expanded="false" />
-            <element signature="e#5319#5560#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,9 +1841,6 @@
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#211#230#0" expanded="true" />
-            <element signature="e#2040#2325#0" expanded="false" />
-            <element signature="e#2896#3145#0" expanded="false" />
-            <element signature="e#3257#3527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -838,6 +1872,7 @@
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#97#132#0" expanded="true" />
+            <marker date="1479913710866" expanded="true" signature="230:523" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -866,8 +1901,6 @@
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#5085#5317#0" expanded="false" />
-            <element signature="e#5319#5560#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -908,9 +1941,6 @@
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#211#230#0" expanded="true" />
-            <element signature="e#2040#2325#0" expanded="false" />
-            <element signature="e#2896#3145#0" expanded="false" />
-            <element signature="e#3257#3527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -942,6 +1972,7 @@
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#97#132#0" expanded="true" />
+            <marker date="1479913710866" expanded="true" signature="230:523" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -970,8 +2001,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#5085#5317#0" expanded="false" />
-            <element signature="e#5319#5560#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,9 +2041,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#211#230#0" expanded="true" />
-            <element signature="e#2040#2325#0" expanded="false" />
-            <element signature="e#2896#3145#0" expanded="false" />
-            <element signature="e#3257#3527#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1025,6 +2051,7 @@
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#97#132#0" expanded="true" />
+            <marker date="1479913710866" expanded="true" signature="230:523" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1111,17 +2138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#85#104#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,45 +2151,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="454">
+          <caret line="123" column="45" selection-start-line="123" selection-start-column="45" selection-end-line="123" selection-end-column="45" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
-            <element signature="e#5085#5317#0" expanded="false" />
-            <element signature="e#5319#5560#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MoveTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding>
+            <element signature="e#97#132#0" expanded="true" />
+            <marker date="1479913710866" expanded="true" signature="230:523" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MiniMax.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#63#0" expanded="true" />
+            <marker date="1479913710878" expanded="true" signature="169:236" ph="{...}" />
+            <marker date="1479913710878" expanded="true" signature="303:1098" ph="{...}" />
+            <marker date="1479913710878" expanded="true" signature="1158:1974" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2284">
-          <caret line="155" column="42" selection-start-line="155" selection-start-column="42" selection-end-line="155" selection-end-column="42" />
+        <state relative-caret-position="379">
+          <caret line="156" column="44" selection-start-line="156" selection-start-column="44" selection-end-line="156" selection-end-column="44" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-          <folding>
-            <element signature="e#43#67#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameNode.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2745">
+        <state relative-caret-position="1789">
           <caret line="345" column="0" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
           <folding>
             <element signature="e#43#64#0" expanded="true" />
@@ -1201,36 +2221,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#43#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MoveTree.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1586">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="109" column="24" selection-start-line="109" selection-start-column="24" selection-end-line="109" selection-end-column="24" />
           <folding>
             <element signature="e#211#230#0" expanded="true" />
-            <element signature="e#2040#2325#0" expanded="false" />
-            <element signature="e#2896#3145#0" expanded="false" />
-            <element signature="e#3257#3527#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MoveTree.h">
+    <entry file="file://$PROJECT_DIR$/src/UI.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <element signature="e#97#132#0" expanded="true" />
+            <element signature="e#85#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MiniMax.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#43#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeListsBR2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

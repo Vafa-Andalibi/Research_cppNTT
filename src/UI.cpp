@@ -154,7 +154,7 @@ std::vector<char> UI::printChoices(MoveTree moves, std::shared_ptr<GameNode> boa
                 if(board->possibleMoves.find(move) != board->possibleMoves.end()){
                     std::shared_ptr<GameNode> child(new GameNode(*board));
                     child->makeMove(move);
-                    char status = moves.get(*child);
+                    char status = moves.get(child);
                     if(status == 1){
                         row += GREEN + " " + std::to_string(counter) + RESET;
                         if(counter > 9){

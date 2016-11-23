@@ -9,13 +9,12 @@
 #include "mpi/mpi.h"
 #include "UI.h"
 
-#define N 5
-
 bool getInteractive(int argc, char *argv[]);
 unsigned char getN(int argc, char *argv[]);
 int getRAM(int argc, char **argv);
 int getThreads(int argc, char *argv[]);
 char* getDBDirectory(int argc, char *argv[]);
+bool getRemove(int argc, char *argv[]);
 
 int main(int argc, char *argv[]) {
 
@@ -110,11 +109,16 @@ int main(int argc, char *argv[]) {
         //gets the relevant values
         if(id == 0){
 
-
-
-
             //gets the correct n
             n = getN(argc, argv);
+
+            //deletes the existing database if necessary
+            if(getRemove(argc, argv)){
+                std::cout << "Removing DB" << std::endl;
+                MoveTree::removeDb(n, dir);
+            }
+
+            //sends n
             if(n == 0){
                 std::cout << "N not correctly specified (-n _)" << std::endl;
                 MPI_Abort(MPI_COMM_WORLD, 1);
@@ -184,6 +188,16 @@ int main(int argc, char *argv[]) {
 bool getInteractive(int argc, char *argv[]){
     for(int i = 0; i < argc; i++){
         if(std::strcmp(argv[i], "-i") == 0){
+            return true;
+        }
+    }
+    return false;
+}
+
+//checks arguments for remove existing database
+bool getRemove(int argc, char *argv[]){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-r") == 0){
             return true;
         }
     }
