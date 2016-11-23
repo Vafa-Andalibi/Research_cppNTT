@@ -5,9 +5,6 @@
 #ifndef CPPNTT_MOVETREE_H
 #define CPPNTT_MOVETREE_H
 
-
-#include <libcuckoo/city_hasher.hh>
-#include <libcuckoo/cuckoohash_map.hh>
 #include <db_cxx.h>
 #include "GameNode.h"
 
