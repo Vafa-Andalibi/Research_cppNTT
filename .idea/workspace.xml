@@ -49,8 +49,8 @@
       <file leaf-file-name="compile.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compile.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -631,7 +631,7 @@
       <workItem from="1479760539699" duration="16642000" />
       <workItem from="1479778437676" duration="27000" />
       <workItem from="1479828466488" duration="37548000" />
-      <workItem from="1479909355635" duration="14057000" />
+      <workItem from="1479909355635" duration="14272000" />
     </task>
     <task id="LOCAL-00001" summary="First time that MPI works - still much clean-up and optimize">
       <created>1479850874542</created>
@@ -710,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1479924097825</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Big Red Attempt 3 - Launch Command">
+      <created>1479924196894</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1479924196894</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121395000" />
+    <option name="totallyTimeSpent" value="121610000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="2495" height="1321" extended-state="6" />
@@ -1246,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
