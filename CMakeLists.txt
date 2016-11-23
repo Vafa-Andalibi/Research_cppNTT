@@ -1,8 +1,24 @@
 cmake_minimum_required(VERSION 3.6)
 project(cppNTT)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Ofast -fopenmp")
-link_directories(/usr/local/lib)
-set(SOURCE_FILES src/GameNode.cpp src/GameNode.h src/main.cpp src/MoveTree.cpp src/MoveTree.h src/MiniMax.cpp src/MiniMax.h)
+set(SOURCE_FILES src/GameNode.cpp src/GameNode.h src/main.cpp src/MoveTree.cpp src/MoveTree.h src/MiniMax.cpp src/MiniMax.h src/UI.cpp src/UI.h)
+
+find_package(MPI REQUIRED)
+include_directories(${MPI_INCLUDE_PATH} )
+
 add_executable(cppNTT ${SOURCE_FILES})
-target_link_libraries(cppNTT rocksdb gflags bz2 snappy pthread z tbb cityhash)
+target_link_libraries(cppNTT ${MPI_LIBRARIES} db_cxx gflags bz2 snappy pthread z cityhash)
+
+if(MPI_COMPILE_FLAGS)
+    set_target_properties(cppNTT PROPERTIES
+            COMPILE_FLAGS "${MPI_COMPILE_FLAGS} ")
+endif()
+
+if(MPI_LINK_FLAGS)
+    set_target_properties(cppNTT PROPERTIES
+            LINK_FLAGS "${MPI_LINK_FLAGS}")
+endif()
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Ofast -fopenmp")
+
+

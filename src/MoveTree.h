@@ -6,28 +6,31 @@
 #define CPPNTT_MOVETREE_H
 
 
-#include <rocksdb/db.h>
 #include <libcuckoo/city_hasher.hh>
 #include <libcuckoo/cuckoohash_map.hh>
+#include <db_cxx.h>
 #include "GameNode.h"
 
 class MoveTree {
 
     public:
-    rocksdb::DB* resolved;
-    cuckoohash_map<unsigned long long, char, CityHasher<unsigned long long> >* locks;
+    Db* resolved;
+    DbEnv* resEnv;
+    Db* locks;
+    DbEnv* lockEnv;
+    char* dir;
 
-    MoveTree(char n);
-    MoveTree(rocksdb::DB& movetree);
+    MoveTree(char n, char* dir);
 
-    void lock(const GameNode &board);
-    void unlock(const GameNode &board);
-    bool isLocked(const GameNode &board);
 
-    void put(const GameNode &node, char i);
-    char get(const GameNode &board);
+    void lock(GameNode &board);
+    void unlock(GameNode &board);
+    bool isLocked(GameNode &board);
 
-    std::shared_ptr<GameNode> getStart(const GameNode &node);
+    void put(GameNode &node, char i);
+    char get(GameNode &board);
+
+    std::shared_ptr<GameNode> getStart(GameNode &node);
 
     void open(char n);
     void close();

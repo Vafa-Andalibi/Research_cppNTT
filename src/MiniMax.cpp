@@ -5,36 +5,29 @@
 #include "MiniMax.h"
 #include <vector>
 #include <iostream>
+#include <omp.h>
 
-MoveTree* MiniMax::tree = nullptr;
 
-MiniMax::MiniMax(MoveTree* tree){
-    MiniMax::tree = tree;
+MiniMax::MiniMax(std::shared_ptr<MoveTree> tree){
+    this->tree = tree;
     std::cout << "Made it" << std::endl;
 }
 
 
-void MiniMax::initiate(const GameNode &objective){
+void MiniMax::initiate(GameNode &objective, int process, int threads){
+    std::cout << process << ": Entering" << std::endl;
 
-    #pragma omp parallel num_threads(8)
+    omp_set_num_threads(threads);
+    #pragma omp parallel
     {
-        #pragma omp for schedule(dynamic)
-        for(int i = 0; i < 50000; i++) {
+       #pragma omp for schedule(dynamic)
+       for(int i = 0; i < 50000; i++) {
+            std::cout << process << ": Checking Tree" << std::endl;
             if(MiniMax::tree->get(objective) == -1) {
-                std::shared_ptr<GameNode> start;
-                #pragma omp critical(start)
-                {
-                    start = MiniMax::tree->getStart(objective);
-                    if(start) MiniMax::tree->lock(*start);
 
-                }
-
-                if(start) {
-                    std::cout << "Starting!" << std::endl;
-                    start->printInfo();
-                    runThread(start);
-                    std::cout << "Done with thread!" << std::endl;
-                }
+                std::cout << process << ": Starting" << std::endl;
+                runThread(std::shared_ptr<GameNode>(new GameNode(objective)));
+                std::cout << process << ": Finishing" << std::endl;
 
             }else{
                 #pragma omp cancel for
@@ -43,7 +36,7 @@ void MiniMax::initiate(const GameNode &objective){
         }
     }
 
-    std::cout << "Finished" << std::endl;
+    std::cout << "Finished " << static_cast<unsigned>(MiniMax::tree->get(objective)) << std::endl;
 }
 
 
@@ -51,37 +44,35 @@ void MiniMax::initiate(const GameNode &objective){
 
 bool MiniMax::runThread(std::shared_ptr<GameNode> node){
 
+    //node->printInfo();
     char dp = MiniMax::tree->get(*node);
     if(dp != -1){
-        MiniMax::tree->unlock(*node);
+        //std::cout << "RETURN DP " << (dp == 1) << " FOR " << std::endl;
+        //node->printInfo();
         return dp == 1;
     }
 
 
-    char status = 0;
+    char status = 1;
     std::vector<std::shared_ptr<GameNode> > children = (*node).succ();
-    while(!children.empty()) {
-        std::vector<std::shared_ptr<GameNode> >::iterator child = children.begin();
-        while(child != children.end()){
-            if (!MiniMax::tree->isLocked(**child)) {
-                MiniMax::tree->lock(*node);
-                if (!runThread(*child)) {
-                    status = 1;
-                }
-                child = children.erase(child);
-            }else{
-                child++;
-            }
+    std::random_shuffle(children.begin(), children.end());
+    std::vector<std::shared_ptr<GameNode> >::iterator child = children.begin();
+    while(child != children.end()){
+        if (runThread(*child)) {
+            status = 0;
         }
+        child++;
     }
 
+    //std::cout << "RETURN " << (status == 1) << " FOR: " << std::endl;
     if(status == 1){
+
         MiniMax::tree->put(*node, 1);
     }else{
         MiniMax::tree->put(*node, 0);
     }
 
-    MiniMax::tree->unlock(*node);
+    //node->printInfo();
     return status == 1;
 
 }

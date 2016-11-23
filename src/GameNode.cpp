@@ -44,7 +44,6 @@ void GameNode::makeMove(unsigned char move){
 
 //updates the hash
 void GameNode::updateHash(){
-
     unsigned char sym_type = 0;
     unsigned long long hash = this->board;
     unsigned long long temp;
@@ -55,7 +54,6 @@ void GameNode::updateHash(){
         sym_type = 1;
         hash = temp;
     }
-
     //check r2
     temp = this->r2Board(board);
     if (temp < hash) {
@@ -124,6 +122,7 @@ unsigned long long GameNode::r2Board(unsigned long long board){
 unsigned long long GameNode::r3Board(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
+
         if ((board >> i) & 1) {
             output |= 1 << r3Move(i);
         }

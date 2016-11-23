@@ -1,7 +1,6 @@
 //
 // Created by jclangst on 9/3/2016.
 //
-#include "rocksdb/db.h"
 #include <iostream>
 #include <ctime>
 #include "GameNode.h"
@@ -12,8 +11,24 @@
 
 #define N 5
 
+bool getInteractive(int argc, char *argv[]);
+unsigned char getN(int argc, char *argv[]);
+int getRAM(int argc, char **argv);
+int getThreads(int argc, char *argv[]);
+char* getDBDirectory(int argc, char *argv[]);
+
 int main(int argc, char *argv[]) {
 
+    //program variables
+    UI ui;
+    unsigned char n;
+    bool interactive = false;
+    int ram;
+    int threads;
+    char* dir = nullptr;
+    int dirLen = 0;
+
+    //MPI variables
     int id;
     int ierr;
     int p;
@@ -27,80 +42,191 @@ int main(int argc, char *argv[]) {
     //get the specific process ID
     ierr = MPI_Comm_rank(MPI_COMM_WORLD, &id);
 
-    //UI ui;
-    unsigned char n;
-   // n = ui.getN();
+    //gets critical program parameters
+    if(id == 0){
+        interactive = getInteractive(argc, argv);
+        if(p>1) MPI_Send(&interactive, 1, MPI_CXX_BOOL, 1, 0, MPI_COMM_WORLD);
+
+        //gets the ram
+        ram = getRAM(argc, argv);
+        if(ram == 0){
+            std::cout << "RAM not correctly specified (-ram _)" << std::endl;
+            //MPI_Abort(MPI_COMM_WORLD, 1);
+        }else{
+            if(p > 1) MPI_Send(&ram, 1, MPI_INT, 1, 2, MPI_COMM_WORLD);
+        }
 
 
-    std::shared_ptr<MoveTree> moves(new MoveTree(N));
-    MiniMax search = MiniMax(moves);
+        //gets the threads per node
+        threads = getThreads(argc, argv);
+        if(threads == 0){
+            std::cout << "Threads not correctly specified (-threads _)" << std::endl;
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }else{
+            if(p > 1)MPI_Send(&threads, 1, MPI_INT, 1, 3, MPI_COMM_WORLD);
+        }
+
+        //gets the database directory
+        dir = getDBDirectory(argc, argv);
+        dirLen = (int) std::strlen(dir);
+        if(dir == nullptr){
+            std::cout << "Directory not correctly specified (-dir _)" << std::endl;
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }else{
+            if(p > 1) MPI_Send(&dirLen, 1, MPI_INT, 1, 6, MPI_COMM_WORLD);
+            if(p > 1) MPI_Send(dir, dirLen + 1, MPI_CHAR, 1, 5, MPI_COMM_WORLD);
+        }
 
 
-    std::clock_t begin = clock();
+    }else{
+        //receive interactive directive
+        MPI_Recv(&interactive, 1, MPI_INT, id-1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Send(&interactive, 1, MPI_CXX_BOOL, (id+1)%p, 0, MPI_COMM_WORLD);
+        //receive ram
+        MPI_Recv(&ram, 1, MPI_INT, id-1, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Send(&ram, 1, MPI_INT, (id+1)%p, 2, MPI_COMM_WORLD);
+        //receive threads
+        MPI_Recv(&threads, 1, MPI_INT, id-1, 3, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Send(&threads, 1, MPI_INT, (id+1) %p, 3, MPI_COMM_WORLD);
+        //receive directory
+        MPI_Recv(&dirLen, 1, MPI_INT,id-1,6,MPI_COMM_WORLD,MPI_STATUS_IGNORE);
+        MPI_Send(&dirLen, 1, MPI_INT, (id+1)%p, 6, MPI_COMM_WORLD);
+        dir = new char[dirLen];
+        MPI_Recv(dir, dirLen + 1, MPI_CHAR, id-1, 5, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Send(dir, dirLen + 1, MPI_CHAR, (id+1) %p, 5, MPI_COMM_WORLD);
+    }
+
+
+    //interactive mode
+    if(interactive && id == 0){
+
+        n = ui.getN();
+        std::shared_ptr<MoveTree> moves(new MoveTree(n, dir));
+        ui.explore(std::shared_ptr<GameNode>(new GameNode(n)), *moves);
+
+    //headless mode
+    }else if(!interactive){
+
+        //gets the relevant values
+        if(id == 0){
 
 
 
 
-    std::cout << "Iniating Process " << id << std::endl;
+            //gets the correct n
+            n = getN(argc, argv);
+            if(n == 0){
+                std::cout << "N not correctly specified (-n _)" << std::endl;
+                MPI_Abort(MPI_COMM_WORLD, 1);
+            }else{
+                if(p>1) MPI_Send(&n, 1, MPI_INT, 1, 1, MPI_COMM_WORLD);
+            }
 
-    std::cout << id << ": SEARCH - " << &search << std::endl;
-    GameNode node = GameNode(N);
-    moves->get(node);
+
+        }else{
+            //receive n
+            MPI_Recv(&n, 1, MPI_INT, id-1, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Send(&n, 1, MPI_INT, (id+1)%p, 1, MPI_COMM_WORLD);
+        }
+
+        auto begin = std::chrono::high_resolution_clock::now();
+        //searching algorithm
+        std::shared_ptr<MoveTree> moves(new MoveTree(n, dir));
+        MiniMax search = MiniMax(moves);
+        GameNode node(n);
+        search.initiate(node, id, threads);
 
 
-    std::cout << id << " NODE - " << &node << std::endl;
-    search.initiate(node, id);
+        if(id==0){
+            auto end = std::chrono::high_resolution_clock::now();
+            std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end-begin).count() << "ns" << std::endl;
+        }
+
+    }
+
+
+
+//
+//    std::clock_t begin = clock();
+//
+//
+//
+//
+//    std::cout << "Iniating Process " << id << std::endl;
+//
+//    std::cout << id << ": SEARCH - " << &search << std::endl;
+//    GameNode node = GameNode(N);
+//    moves->get(node);
+
+
+//    std::cout << id << " NODE - " << &node << std::endl;
 
     std::cout << id << " DONE" << std::endl;
     //terminate process
     MPI_Finalize();
 
 
-
-    //ui.explore(std::shared_ptr<GameNode>(new GameNode(N)), *moves);
-
-
-    if(id == 0){
-        std::clock_t end = clock();
-        std::cout << (end - begin)/CLOCKS_PER_SEC << std::endl;
-        moves->close();
-    }
+//
+//    ui.explore(std::shared_ptr<GameNode>(new GameNode(N)), *moves);
+//
+//
+//    if(id == 0){
+//        std::clock_t end = clock();
+//        std::cout << (end - begin)/CLOCKS_PER_SEC << std::endl;
+//        moves->close();
+//    }
 
     return 0;
 }
 
 
+//checks arguments for interactive mode or not
+bool getInteractive(int argc, char *argv[]){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-i") == 0){
+            return true;
+        }
+    }
+    return false;
+}
 
+//checks the arguments for n
+unsigned char getN(int argc, char *argv[]){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-n") == 0){
+            return (unsigned char) std::atoi(argv[i+1]);
+        }
+    }
+    return 0;
+}
 
+//checks the arguments for ram
+int getRAM(int argc, char **argv){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-ram") == 0){
+            return std::atoi(argv[i+1]);
+        }
+    }
+    return 0;
+}
 
-//    // Structure that defines hashing and comparison operations for user's type.
-//    struct MyHashCompare {
-//        static size_t hash( const string& x ) {
-//            size_t h = 0;
-//            for( const char* s = x.c_str(); *s; ++s )
-//                h = (h*17)^*s;
-//            return h;
-//        }
-//        //! True if strings are equal
-//        static bool equal( const string& x, const string& y ) {
-//            return x==y;
-//        }
-//    };
-//
-//    // A concurrent hash table that maps strings to ints.
-//    typedef concurrent_hash_map<string,int> StringTable;
-//
-//    StringTable::accessor a;
-//    StringTable tbl;
-//    tbl.insert(a, "jack");
-//    a->second = (int)2;
-//
-//    a.release();
-//
-//    StringTable::accessor b;
-//
-//    tbl.find(b, "jack");
-//    cout << b->second << endl;
-//
-//    delete db;
-//}
+//checks the arguments for threads
+int getThreads(int argc, char *argv[]){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-threads") == 0){
+            return std::atoi(argv[i+1]);
+        }
+    }
+    return 0;
+}
+
+//gets the directory for the database
+char* getDBDirectory(int argc, char *argv[]){
+    for(int i = 0; i < argc; i++){
+        if(std::strcmp(argv[i], "-dir") == 0){
+            return argv[i+1];
+        }
+    }
+    return nullptr;
+}
+

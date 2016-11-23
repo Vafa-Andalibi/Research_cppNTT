@@ -14,10 +14,10 @@ class MiniMax {
 
 public:
 
-    MiniMax(MoveTree* tree);
-    static MoveTree* tree;
+    MiniMax(std::shared_ptr<MoveTree> tree);
+    std::shared_ptr<MoveTree> tree;
 
-    void initiate(const GameNode &objective);
+    void initiate(GameNode &objective, int process, int threads);
 
     bool runThread(std::shared_ptr<GameNode> node);
 
