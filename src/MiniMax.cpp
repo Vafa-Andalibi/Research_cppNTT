@@ -5,6 +5,7 @@
 #include "MiniMax.h"
 #include <vector>
 #include <iostream>
+#include <algorithm>
 #include <omp.h>
 
 

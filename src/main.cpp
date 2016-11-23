@@ -8,6 +8,8 @@
 #include "MiniMax.h"
 #include "mpi/mpi.h"
 #include "UI.h"
+#include <cstring>
+#include <chrono>
 
 bool getInteractive(int argc, char *argv[]);
 unsigned char getN(int argc, char *argv[]);

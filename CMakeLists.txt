@@ -4,7 +4,8 @@ project(cppNTT)
 set(SOURCE_FILES src/GameNode.cpp src/GameNode.h src/main.cpp src/MoveTree.cpp src/MoveTree.h src/MiniMax.cpp src/MiniMax.h src/UI.cpp src/UI.h)
 
 find_package(MPI REQUIRED)
-include_directories(${MPI_INCLUDE_PATH} ../local/lib/)
+include_directories(${MPI_INCLUDE_PATH} ../local/lib/bdb/)
+link_directories(../local/lib/bdb/)
 
 add_executable(cppNTT ${SOURCE_FILES})
 target_link_libraries(cppNTT ${MPI_LIBRARIES} db_cxx boost_system boost_filesystem)
