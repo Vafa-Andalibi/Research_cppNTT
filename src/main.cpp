@@ -3,11 +3,11 @@
 //
 #include <iostream>
 #include <ctime>
-#include "GameNode.h"
-#include "MoveTree.h"
-#include "MiniMax.h"
+#include "../include/GameNode.h"
+#include "../include/MoveTree.h"
+#include "../include/MiniMax.h"
 #include "mpi.h"
-#include "UI.h"
+#include "../include/UI.h"
 #include <cstring>
 #include <chrono>
 
@@ -43,6 +43,7 @@ int main(int argc, char *argv[]) {
     //get the specific process ID
     ierr = MPI_Comm_rank(MPI_COMM_WORLD, &id);
 
+
     //gets critical program parameters
     if(id == 0){
         interactive = getInteractive(argc, argv);
@@ -56,6 +57,8 @@ int main(int argc, char *argv[]) {
         }else{
             if(p > 1) MPI_Send(&ram, 1, MPI_INT, 1, 2, MPI_COMM_WORLD);
         }
+
+        
 
 
         //gets the threads per node
@@ -106,33 +109,33 @@ int main(int argc, char *argv[]) {
         ui.explore(std::shared_ptr<GameNode>(new GameNode(n)), *moves);
 
     //headless mode
-    }else if(!interactive){
+    }else if(!interactive) {
 
         //gets the relevant values
-        if(id == 0){
+        if (id == 0) {
 
             //gets the correct n
             n = getN(argc, argv);
 
             //deletes the existing database if necessary
-            if(getRemove(argc, argv)){
+            if (getRemove(argc, argv)) {
                 std::cout << "Removing DB" << std::endl;
                 MoveTree::removeDb(n, dir);
             }
 
             //sends n
-            if(n == 0){
+            if (n == 0) {
                 std::cout << "N not correctly specified (-n _)" << std::endl;
                 MPI_Abort(MPI_COMM_WORLD, 1);
-            }else{
-                if(p>1) MPI_Send(&n, 1, MPI_INT, 1, 1, MPI_COMM_WORLD);
+            } else {
+                if (p > 1) MPI_Send(&n, 1, MPI_INT, 1, 1, MPI_COMM_WORLD);
             }
 
 
-        }else{
+        } else {
             //receive n
-            MPI_Recv(&n, 1, MPI_INT, id-1, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            MPI_Send(&n, 1, MPI_INT, (id+1)%p, 1, MPI_COMM_WORLD);
+            MPI_Recv(&n, 1, MPI_INT, id - 1, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            MPI_Send(&n, 1, MPI_INT, (id + 1) % p, 1, MPI_COMM_WORLD);
         }
 
         auto begin = std::chrono::high_resolution_clock::now();
@@ -143,44 +146,15 @@ int main(int argc, char *argv[]) {
         search.initiate(node, id, threads);
 
 
-        if(id==0){
+        if (id == 0) {
             auto end = std::chrono::high_resolution_clock::now();
-            std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end-begin).count() << "ns" << std::endl;
+            std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end - begin).count() << "ns" << std::endl;
         }
-
     }
 
-
-
-//
-//    std::clock_t begin = clock();
-//
-//
-//
-//
-//    std::cout << "Iniating Process " << id << std::endl;
-//
-//    std::cout << id << ": SEARCH - " << &search << std::endl;
-//    GameNode node = GameNode(N);
-//    moves->get(node);
-
-
-//    std::cout << id << " NODE - " << &node << std::endl;
-
     std::cout << id << " DONE" << std::endl;
-    //terminate process
     MPI_Finalize();
 
-
-//
-//    ui.explore(std::shared_ptr<GameNode>(new GameNode(N)), *moves);
-//
-//
-//    if(id == 0){
-//        std::clock_t end = clock();
-//        std::cout << (end - begin)/CLOCKS_PER_SEC << std::endl;
-//        moves->close();
-//    }
 
     return 0;
 }

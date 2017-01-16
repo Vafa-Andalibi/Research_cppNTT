@@ -2,7 +2,7 @@
 // Created by jclangst on 11/21/16.
 //
 
-#include "MiniMax.h"
+#include "../include/MiniMax.h"
 #include <vector>
 #include <iostream>
 #include <algorithm>

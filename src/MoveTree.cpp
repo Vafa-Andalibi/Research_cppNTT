@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <queue>
-#include "MoveTree.h"
+#include "../include/MoveTree.h"
 #include "boost/filesystem/operations.hpp"
 
 /***************************************
@@ -54,15 +54,15 @@ void MoveTree::open(char n){
             std::cout << "....Successfully Created !" << std::endl;
     }
 
-    this->resEnv = new DbEnv(0);
-    resEnv->set_cachesize(3,0,1);
+    this->resEnv = new DbEnv(0u);
+    resEnv->set_cachesize(20,0,1);
     resEnv->add_data_dir(dataDir.c_str());
     resEnv->open(envDir.c_str(), DB_INIT_LOCK | DB_INIT_MPOOL | DB_THREAD| DB_CREATE, 0);
 
     std::cout << "Opening DB" << std::endl;
     //todo do BTree calcs
     this->resolved = new Db(resEnv, 0);
-    resolved->set_pagesize(512*8);
+    resolved->set_pagesize(512*16);
 
     resolved->set_create_dir(dataDir.c_str());
 
@@ -118,7 +118,7 @@ void MoveTree::put(std::shared_ptr<GameNode> board, char i){
     value.set_flags(DB_DBT_REALLOC);
 
     //store in database
-    this->resolved->put(NULL, &key, &value, 0);
+    this->resolved->put(NULL, &key, &value, DB_NOOVERWRITE);
 }
 
 //gets resolution of game state or returns -1 if not yet resolved

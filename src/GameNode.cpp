@@ -2,7 +2,7 @@
 // Created by jclangst on 9/3/2016.
 //
 
-#include "GameNode.h"
+#include "../include/GameNode.h"
 #include <array>
 #include <vector>
 #include <iostream>
@@ -36,7 +36,7 @@ GameNode::GameNode(const GameNode &node){
 
 //makes a move and updates the child's possible moves and hash
 void GameNode::makeMove(unsigned char move){
-    this->board |= 1 << move;
+    this->board |= 1UL << move;
     this->possibleMoves.erase(move);
     this->updateHash();
     prune(move);
@@ -105,7 +105,7 @@ unsigned long long GameNode::rBoard(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << rMove(i);
+            output |= 1UL << rMove(i);
         }
     }
     return output;
@@ -114,7 +114,7 @@ unsigned long long GameNode::r2Board(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << r2Move(i);
+            output |= 1UL << r2Move(i);
         }
     }
     return output;
@@ -124,7 +124,7 @@ unsigned long long GameNode::r3Board(unsigned long long board){
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
 
         if ((board >> i) & 1) {
-            output |= 1 << r3Move(i);
+            output |= 1UL << r3Move(i);
         }
     }
     return output;
@@ -133,7 +133,7 @@ unsigned long long GameNode::fBoard(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << fMove(i);
+            output |= 1UL << fMove(i);
         }
     }
     return output;
@@ -142,7 +142,7 @@ unsigned long long GameNode::rfBoard(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << rfMove(i);
+            output |= 1UL << rfMove(i);
         }
     }
     return output;
@@ -151,7 +151,7 @@ unsigned long long GameNode::r2fBoard(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << r2fMove(i);
+            output |= 1UL << r2fMove(i);
         }
     }
     return output;
@@ -160,7 +160,7 @@ unsigned long long GameNode::r3fBoard(unsigned long long board){
     unsigned long long output = 0;
     for(unsigned char i = 0; i < GameNode::n * GameNode::n; i++){
         if ((board >> i) & 1) {
-            output |= 1 << r3fMove(i);
+            output |= 1UL << r3fMove(i);
         }
     }
     return output;

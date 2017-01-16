@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.3)
 project(cppNTT)
 
-set(SOURCE_FILES src/GameNode.cpp src/GameNode.h src/main.cpp src/MoveTree.cpp src/MoveTree.h src/MiniMax.cpp src/MiniMax.h src/UI.cpp src/UI.h)
+set(SOURCE_FILES src/GameNode.cpp include/GameNode.h src/main.cpp src/MoveTree.cpp include/MoveTree.h src/MiniMax.cpp include/MiniMax.h src/UI.cpp include/UI.h)
 
 find_package(MPI REQUIRED)
 include_directories(${MPI_INCLUDE_PATH} ../local/lib/bdb/)

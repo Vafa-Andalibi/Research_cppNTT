@@ -2,15 +2,15 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/GameNode.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/GameNode.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/UI.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/UI.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/MiniMax.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/MiniMax.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/MoveTree.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/MoveTree.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/UI.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GameNode.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/MiniMax.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/MiniMax.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/UI.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/MoveTree.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/include/GameNode.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

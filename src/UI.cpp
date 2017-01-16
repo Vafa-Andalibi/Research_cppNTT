@@ -2,7 +2,7 @@
 // Created by jclangst on 11/22/16.
 //
 
-#include "UI.h"
+#include "../include/UI.h"
 
 
 const std::string RESET = "\u001B[0m";
@@ -154,6 +154,7 @@ std::vector<char> UI::printChoices(MoveTree moves, std::shared_ptr<GameNode> boa
                 if(board->possibleMoves.find(move) != board->possibleMoves.end()){
                     std::shared_ptr<GameNode> child(new GameNode(*board));
                     child->makeMove(move);
+                    std::cout << static_cast<unsigned>(move) << " -> " << child->board <<": " << child->hash <<std::endl;
                     char status = moves.get(child);
                     if(status == 1){
                         row += GREEN + " " + std::to_string(counter) + RESET;
@@ -173,7 +174,12 @@ std::vector<char> UI::printChoices(MoveTree moves, std::shared_ptr<GameNode> boa
                         }
                         moveMapping.push_back(move);
                         counter++;
+                    }else{
+                        counter++;
+                        std::cout << "HERE" << std::endl;
                     }
+
+
                 }else{
                     row += " -  ";
                 }
@@ -182,11 +188,10 @@ std::vector<char> UI::printChoices(MoveTree moves, std::shared_ptr<GameNode> boa
                 row += " X  ";
             }
         }
-
         output += row + "\n";
     }
 
-    std::cout <<"ENDED?" << std::endl;
+
     std::cout << output << std::endl;
     return moveMapping;
 }
