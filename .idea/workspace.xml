@@ -14,9 +14,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a2d752b-a95e-4b42-ac1d-fb88ba386f19" name="Default" comment="">
+    <list default="true" id="8a2d752b-a95e-4b42-ac1d-fb88ba386f19" name="Default" comment="Cluster Compile Added">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccmrunCompile.sh" afterPath="$PROJECT_DIR$/ccmrunCompile.sh" />
     </list>
     <ignored path="cppNTT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="compile.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compile.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="155" selection-start-line="7" selection-start-column="155" selection-end-line="7" selection-end-column="155" />
+              <caret line="7" column="165" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="165" />
               <folding />
             </state>
           </provider>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ccmrunCompile.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ccmrunCompile.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ccmrunCompile.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/MoveTree.cpp" />
         <option value="$PROJECT_DIR$/aprun.sh" />
-        <option value="$PROJECT_DIR$/ccmrunCompile.sh" />
         <option value="$PROJECT_DIR$/compile.sh" />
+        <option value="$PROJECT_DIR$/ccmrunCompile.sh" />
       </list>
     </option>
   </component>
@@ -661,7 +661,7 @@
       <workItem from="1479909355635" duration="17124000" />
       <workItem from="1479928481258" duration="3665000" />
       <workItem from="1484365520468" duration="1144000" />
-      <workItem from="1484578447457" duration="1478000" />
+      <workItem from="1484578447457" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="First time that MPI works - still much clean-up and optimize">
       <created>1479850874542</created>
@@ -796,11 +796,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484579439268</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Cluster Compile Added">
+      <created>1484579931743</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1484579931743</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130749000" />
+    <option name="totallyTimeSpent" value="130887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="2495" height="1321" extended-state="6" />
@@ -1232,18 +1239,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ccmrunCompile.sh">
+    <entry file="file://$PROJECT_DIR$/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="105">
+          <caret line="7" column="165" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="165" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compile.sh">
+    <entry file="file://$PROJECT_DIR$/ccmrunCompile.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="155" selection-start-line="7" selection-start-column="155" selection-end-line="7" selection-end-column="155" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
