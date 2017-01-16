@@ -1,0 +1,111 @@
+[01m[K/N/u/jclangst/BigRed2/cppNTT/src/GameNode.cpp:[m[K In member function '[01m[Kunsigned char GameNode::leftDiagLosingMove(unsigned char, unsigned char)[m[K':
+[01m[K/N/u/jclangst/BigRed2/cppNTT/src/GameNode.cpp:286:80:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of '[01m[K((((int)GameNode::n) + -1) - ((int)i))[m[K' from '[01m[Kint[m[K' to '[01m[Kunsigned char[m[K' inside { } [-Wnarrowing]
+             curMove = getMove(std::array<unsigned char, 2>{i, (GameNode::n - 1 - i)});
+[01;32m[K                                                                                ^[m[K
+[01m[K/N/u/jclangst/BigRed2/cppNTT/src/GameNode.cpp:[m[K In member function '[01m[Kstd::array<unsigned char, 2ul> GameNode::getRC(unsigned char)[m[K':
+[01m[K/N/u/jclangst/BigRed2/cppNTT/src/GameNode.cpp:338:46:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of '[01m[K(int)(move / GameNode::n)[m[K' from '[01m[Kint[m[K' to '[01m[Kunsigned char[m[K' inside { } [-Wnarrowing]
+     std::array<unsigned char, 2> RC = {(move / GameNode::n), (move % GameNode::n)};
+[01;32m[K                                              ^[m[K
+[01m[K/N/u/jclangst/BigRed2/cppNTT/src/GameNode.cpp:338:68:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of '[01m[K(int)(move % GameNode::n)[m[K' from '[01m[Kint[m[K' to '[01m[Kunsigned char[m[K' inside { } [-Wnarrowing]
+     std::array<unsigned char, 2> RC = {(move / GameNode::n), (move % GameNode::n)};
+[01;32m[K                                                                    ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:32:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/detail/shared_count.hpp:323:33:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+     explicit shared_count( std::auto_ptr<Y> & r ): pi_( new sp_counted_impl_p<Y>( r.get() ) )
+[01;32m[K                                 ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:247:65:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+ template< class T, class R > struct sp_enable_if_auto_ptr< std::auto_ptr< T >, R >
+[01;32m[K                                                                 ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:446:31:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+     explicit shared_ptr( std::auto_ptr<Y> & r ): px(r.get()), pn()
+[01;32m[K                               ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:459:22:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+     shared_ptr( std::auto_ptr<Y> && r ): px(r.get()), pn()
+[01;32m[K                      ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:525:34:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+     shared_ptr & operator=( std::auto_ptr<Y> & r )
+[01;32m[K                                  ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:534:34:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+     shared_ptr & operator=( std::auto_ptr<Y> && r )
+[01;32m[K                                  ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
+In file included from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/shared_ptr.hpp:17:0[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/path.hpp:29[m[K,
+                 from [01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/filesystem/operations.hpp:25[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:12[m[K:
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:[m[K In member function '[01m[Kboost::shared_ptr<T>& boost::shared_ptr<T>::operator=(std::auto_ptr<_Up>&&)[m[K':
+[01m[K/N/soft/cle4/boost/gnu/1.55.0/include/boost/smart_ptr/shared_ptr.hpp:536:38:[m[K [01;35m[Kwarning: [m[K'[01m[Ktemplate<class> class std::auto_ptr[m[K' is deprecated [-Wdeprecated-declarations]
+         this_type( static_cast< std::auto_ptr<Y> && >( r ) ).swap( *this );
+[01;32m[K                                      ^[m[K
+In file included from [01m[K/opt/gcc/5.3.0/snos/include/g++/memory:81:0[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/GameNode.h:6[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/../include/MoveTree.h:9[m[K,
+                 from [01m[K/N/u/jclangst/BigRed2/cppNTT/src/MoveTree.cpp:11[m[K:
+[01m[K/opt/gcc/5.3.0/snos/include/g++/bits/unique_ptr.h:49:28:[m[K [01;36m[Knote: [m[Kdeclared here
+   template<typename> class auto_ptr;
+[01;32m[K                            ^[m[K
