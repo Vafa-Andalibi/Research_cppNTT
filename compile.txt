@@ -1,0 +1,3 @@
+In bigred2 code can be compiled using the following command:
+
+mpicxx -std=c++11 -Ofast -fopenmp -o /N/u/vafandal/BigRed2/cppNTT/search /N/u/vafandal/BigRed2/cppNTT/src/GameNode.cpp /N/u/vafandal/BigRed2/cppNTT/src/main.cpp /N/u/vafandal/BigRed2/cppNTT/src/MoveTree.cpp /N/u/vafandal/BigRed2/cppNTT/src/MiniMax.cpp -Wl,--dynamic-linker=/lib64/ld-linux-x86-64.so.2 -Wl,-Bdynamic -ldb_cxx-4.3 -I/usr/include/db43 /N/u/vafandal/BigRed2/cppNTT/src/UI.cpp  -pthread -Wl,-rpath -Wl,--enable-new-dtags -Wl,-Bdynamic -lmpi_cxx -lmpi

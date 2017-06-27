@@ -33,8 +33,11 @@ void MiniMax::initiate(GameNode &node, int process, int threads){
                 std::cout << process << ": Finishing" << std::endl;
 
             }else{
+		
+           //     std::cout << process << "OMP Cancelled 1" << std::endl;
                 #pragma omp cancel for
             }
+             //   std::cout << process << "OMP Cancelled 2" << std::endl;
             #pragma omp cancellation point for
         }
     }

@@ -1,6 +1,0 @@
-Application 7385666 resources: utime ~7s, stime ~2s, Rss ~227216, inblocks ~4009158, outblocks ~6493
-Job Cleanup ran on Mon Jan 16 10:56:35 EST 2017
-===============================
-submit_args  : 	 submit_args = ccmrunCompile.sh
-NIDS         : 	 900
-NID Placement: 	 900/4 
